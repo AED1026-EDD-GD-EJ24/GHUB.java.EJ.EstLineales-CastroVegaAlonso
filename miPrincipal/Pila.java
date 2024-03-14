@@ -1,56 +1,70 @@
 package miPrincipal;
 
-public class Pila<T> {
-    
+public class Pila<T>
+{
+    //Atributo cabeza apunta al tope de la pila
     private Nodo<T> cabeza;
     private int tamanio;
-    //constructor por defecto
-    public Pila(){
+
+    public Pila()
+    {
         cabeza = null;
         tamanio = 0;
     }
-    //devuelve el total de elementos de la pila
-    public getTamanio(){
+
+    public int getTamanio()
+    {
         return tamanio;
     }
-    //verifica si la pila esta vacia
-    public boolean esVacia(){
+
+    public boolean esVacia()
+    {
         return (cabeza == null);
     }
-    //agregar un elemento a la pila   
-    public void apilar(T valor){
-        //creamos un nuevo nodo
+
+    public void apilar(T valor)
+    {
         Nodo<T> nuevo = new Nodo<T>();
-        //fijar el valor dentro de nodo
+
+        //Fijar el valor dentro del nodo
         nuevo.setValor(valor);
-        if (esVacia()) {
-            //cabeza apunta al nuevo nodo
-            cabeza = nuevo;
-        }else{
-            //se enlaza el campo siguiente de nuevo con la cabeza
-            nuevo.setSiguiente(cabeza);
-            //la nueva cabeza de la pila pasa a ser nuevo
+        if (esVacia())
+        {
+            //Cabeza apunta al nuevo nodo
             cabeza = nuevo;
         }
-        //incrementamos el tamanio de la pila por que hay un nuevo elemento
+        else
+        {
+            //Se enlaza el campo siguiente de nuevo con la cabeza
+            nuevo.setSiguiente(cabeza);
+
+            //La nueva cabeza de a pila pasa a ser nuevo
+            cabeza = nuevo;
+        }
+
+        //Incrementar el tamaño porque hay un nuevo en la pila
         tamanio++;
     }
-    //eliminar un elemento de la pila
-    public void retirar(){
-        if (!esVacia()) {
+
+    public void retirar()
+    {
+        if (!esVacia())
+        {
             cabeza = cabeza.getSiguiente();
             tamanio--;
         }
     }
-    //devuelve el elemento almacenado en el tope de la pila
 
-    public T cima(){
-        if (!esVacia()) {
+    public T cima()
+    {
+        if(!esVacia())
+        {
             return cabeza.getValor();
-        }else{
+        }
+        else
+        {
             return null;
         }
     }
-
-
+    
 }
