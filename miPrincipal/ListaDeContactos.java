@@ -65,7 +65,7 @@ public class ListaDeContactos {
 
             Contacto con = buscarContacto(nombres,apellidos);
             if(con !=null){
-                for(ínt i = 0; i<contactos.getTamanio();i++){
+                for(int i = 0; i<contactos.getTamanio();i++){
                     Contacto contAux = contactos.getValor(i);
                     if(contAux.getNombres().equals(apellidos) && contAux.getApellidos().equals(apellidos)){
                         contactos.remover(i);
@@ -77,6 +77,21 @@ public class ListaDeContactos {
             }
     }
 
+
+    public boolean modificarContacto(String nombres, String apellidos, String direccion, String correo, String telefono, String celular) throws PosicionIlegalException{
+        //verificar si el contacto existe
+        Contacto con = buscarContacto(nombres, apellidos);
+        if(con == null){
+            return false;
+        }else{
+            //modificar los datos del contacto
+            con.setDireccion(direccion);
+            con.setCorreo(correo);
+            con.setTelefono(telefono);
+            con.setCelular(celular);
+            return true;
+        }
+    }
     
 
     

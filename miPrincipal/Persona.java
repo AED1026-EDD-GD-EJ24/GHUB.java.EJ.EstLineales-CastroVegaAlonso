@@ -1,34 +1,35 @@
 package miPrincipal;
 
-public class Persona{
+public class Persona {
     private String nombre;
     private int edad;
     private String Nacionalidad;
-    public Persona(String nombre, int edad, String Nacionalidad){
+    public Persona(String nombre, int edad, String nacionalidad) {
         this.nombre = nombre;
         this.edad = edad;
         Nacionalidad = nacionalidad;
     }
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
-    public int getEdad(){
+    public int getEdad() {
         return edad;
     }
-    public String getNacionalidad(){
+    public String getNacionalidad() {
         return Nacionalidad;
     }
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public void setEdad(int edad){
+    public void setEdad(int edad) {
         this.edad = edad;
     }
-    public void setNacionalidad(String Nacionalidad){
+    public void setNacionalidad(String nacionalidad) {
         Nacionalidad = nacionalidad;
     }
     @Override
-    public String toString(){
-        return nombre + ", " + edad + ", " + nacionalidad;
+    public String toString() {
+        return nombre + ", " + edad + "," + Nacionalidad;
     }
+      
 }
