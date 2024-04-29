@@ -1,13 +1,13 @@
-package listaDoble;
+package miPrincipal;
 
-public class ListaDoblementeEnlazada<T> {
+public class ListaCircular<T> {
     //Atributos 
     //primer nodo de la lista
     private Nodo<T> cabeza;
     // total de elementos en la lista
     private int tamanio;
     //Constructor por defecto
-    public ListaDoblementeEnlazada(){
+    public ListaCircular(){
         cabeza= null;
         tamanio = 0;
     }
@@ -27,17 +27,18 @@ public class ListaDoblementeEnlazada<T> {
         Nodo<T> nuevo = new Nodo<T>();
         nuevo.setValor(valor);
         if (esVacia()){
+            //Como hay un solo nodo, el siguiente apunta al mismo nodo
+            nuevo.setSiguiente(nuevo);
             cabeza = nuevo; 
         }else{  
             //agregar al final de la lista  
             Nodo<T> aux = cabeza;
-            while(aux.getSiguiente()!=null){
+            while(aux.getSiguiente()!=cabeza){
                 aux = aux.getSiguiente();
             }   
             aux.setSiguiente(nuevo);
-            nuevo.setSiguiente(siguiente);
-            nuevo.setAnterior(aux);
-            siguiente.setAnterior(nuevo); 
+            //Enlaza el ultimo nodo con el primero
+            nuevo.setSiguiente(cabeza);
         }
         tamanio++;
 
@@ -48,17 +49,27 @@ public class ListaDoblementeEnlazada<T> {
             nuevo.setValor(valor);
             //el nuevo nodo se inserta al inicio de la lista
             if(pos==0){
+                //buscar el ultimo
+                Nodo<T> ultimo = cabeza;
+                while(ultimo.getSiguiente() != cabeza){
+                    ultimo = ultimo.getSiguiente();
+                }
+
                 nuevo.setSiguiente(cabeza);
                 cabeza = nuevo;
+                //enlazar el utimo con el primero
+                ultimo.setSiguiente(cabeza);
             }
             else{
                 //el nuevo nodo se inserta al final de la lista
                 if(pos==tamanio){
                     Nodo<T> aux = cabeza;
-                    while(aux.getSiguiente()!=null){
+                    while(aux.getSiguiente()!=cabeza){
                         aux = aux.getSiguiente();
                     }
                     aux.setSiguiente(nuevo);
+                    //enlazar el ultimo con el primero
+                    nuevo.setSiguiente(cabeza);
                 }
                 else{
                     //el nuevo nodo se inserta en cualquier posicion de la lista
@@ -67,8 +78,6 @@ public class ListaDoblementeEnlazada<T> {
                         aux = aux.getSiguiente();
                     }
                     Nodo<T> siguiente = aux.getSiguiente();
-                    prox.getSiguiente().setAnterior(nuevo);
-                    aux.getSiguiente(prox).getSiguiente();
                     aux.setSiguiente(nuevo);
                     nuevo.setSiguiente(siguiente);
                 }
@@ -111,8 +120,15 @@ public class ListaDoblementeEnlazada<T> {
         if(pos>=0 && pos<tamanio){
             if (pos==0){
                 //el nodo a eliminar esta en la primera posicion
+                //Buscar el ultimo nodo para enlazarlo
+                Nodo<T> ultimo = cabeza;
+                while(ultimo.getSiguiente() !=cabeza){
+                    ultimo= ultimo.getSiguiente();
+                }
+                //dezplazamos la cabeza al siguiente nodo
                 cabeza= cabeza.getSiguiente();
-                cabeza.setAnterior(cabeza);
+                //Enlazar el ultimo con la nueva cabeza
+                ultimo.setSiguiente(cabeza);
                 tamanio--;
             }
             //se elimina en medio y al final
@@ -138,8 +154,5 @@ public class ListaDoblementeEnlazada<T> {
 
     }
 
-
-}
-
     
-  
+}
