@@ -1,0 +1,152 @@
+<mxfile host="65bd71144e">
+    <diagram id="37EY1Rs7yOdrIGslUSAl" name="Página-1">
+        <mxGraphModel dx="783" dy="455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#69B6DB" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <object label="Nodo&amp;lt;T&amp;gt;" id="3">
+                    <mxCell style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;points=[[0,0,0,0,0],[0,0.25,0,0,0],[0,0.5,0,0,0],[0,0.75,0,0,0],[0,1,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[1,0,0,0,0],[1,0.25,0,0,0],[1,0.5,0,0,0],[1,0.75,0,0,0],[1,1,0,0,0]];" vertex="1" parent="1">
+                        <mxGeometry x="14" y="88" width="210" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="4" value="- valor: T&lt;br&gt;- siguiente: Nodo&amp;lt;T&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry y="26" width="210" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="3">
+                    <mxGeometry y="68" width="210" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="+ Nodo()&lt;br&gt;+ getValor()&lt;br&gt;+ setValor(valor:T)&lt;br&gt;+ getSiguiente():Nodo&amp;lt;T&amp;gt;&lt;br&gt;+ setSiguiente(siguiente:Nodo&amp;lt;T&amp;gt;)&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry y="76" width="210" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Pila" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="254" y="276" width="160" height="184" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9">
+                    <mxGeometry y="26" width="160" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9">
+                    <mxGeometry y="60" width="160" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="+ Pila()&lt;br&gt;+ getTamanio():int&lt;br&gt;+ esVacia():boolean&lt;br&gt;+ apilar(valor:T)&lt;br&gt;+ retirar()&lt;br&gt;+ cima()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9">
+                    <mxGeometry y="88" width="160" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Cola&amp;lt;T&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="486" width="160" height="184" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- cola: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="13">
+                    <mxGeometry y="26" width="160" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="13">
+                    <mxGeometry y="60" width="160" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="+ Cola()&lt;br&gt;+ getTamanio():int&lt;br&gt;+ esVacia():boolean&lt;br&gt;+ encontrar(T valor): void&lt;br&gt;+ desencolar(): void&lt;br&gt;+ frente(): T" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="13">
+                    <mxGeometry y="88" width="160" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Lista&amp;lt;T&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="440" width="210" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="17">
+                    <mxGeometry y="26" width="210" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="17">
+                    <mxGeometry y="60" width="210" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="+ Lista()&lt;br&gt;+ getTamanio():int&lt;br&gt;+ esVacia():boolean&lt;br&gt;+ Agregar(T valor): void&lt;br&gt;+ Insertar(T valor, int pos):void&lt;br&gt;+ getValor(int pos): T&lt;br&gt;+ Remover(int pos): void&lt;br&gt;+ limpiar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="17">
+                    <mxGeometry y="88" width="210" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="ListaCircular&amp;lt;T&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="330" width="180" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="21">
+                    <mxGeometry y="26" width="180" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="21">
+                    <mxGeometry y="60" width="180" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="+ ListaCircular()&lt;br&gt;+ getTamanio(): int&lt;br&gt;+ EsVacia(): boolean&lt;br&gt;+ Agregar(T valor): void&lt;br&gt;+ Insertar( T valor, int pos): void&lt;br&gt;+ getValor(int pos): T&lt;br&gt;+ Remover(int pos): void&lt;br&gt;+ limpiar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="21">
+                    <mxGeometry y="88" width="180" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Nodo&amp;lt;T&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="15" y="650" width="220" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="25">
+                    <mxGeometry y="26" width="220" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="25">
+                    <mxGeometry y="60" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="+ Nodo()&lt;br&gt;+ getValor()&lt;br&gt;+ setValor(valor:T)&lt;br&gt;+ getSiguiente():Nodo&amp;lt;T&amp;gt;&lt;br&gt;+ setSiguiente(siguiente:Nodo&amp;lt;T&amp;gt;)&lt;br&gt;+ getAnterior(): Nodo&amp;lt;T&amp;gt;&lt;br&gt;+ setAnterior(Nodo&amp;lt;T&amp;gt; anterior): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="25">
+                    <mxGeometry y="88" width="220" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="ListaDoblementeEnlazada&amp;lt;T&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="680" width="220" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+                    <mxGeometry y="26" width="220" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="30">
+                    <mxGeometry y="60" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="+ ListaDoblementeEnlazada()&lt;br&gt;+ EsVacia(): boolean&lt;br&gt;+ Agregar(T valor): void&lt;br&gt;+ Insertar(T valor int pos): void&lt;br&gt;+ getTamanio(): int&lt;br&gt;+ getValor(int pos): T&lt;br&gt;+ Remover(int pos): void&lt;br&gt;+limpiar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+                    <mxGeometry y="88" width="220" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="ListaDobleCircular&amp;lt;T&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="680" width="220" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="- cabeza: Nodo&amp;lt;T&amp;gt;&lt;br&gt;- tamanio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="34">
+                    <mxGeometry y="26" width="220" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="34">
+                    <mxGeometry y="60" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="+ ListaDobleCircular()&lt;br&gt;+ getTamanio(): int&lt;br&gt;+ EsVacia(): boolean&lt;br&gt;+ Agregar(T valor): void&lt;br&gt;+ Insertar(T valor int pos): void&lt;br&gt;+ getValor(int pos): T&lt;br&gt;+ Remover(int pos): void&lt;br&gt;+limpiar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="34">
+                    <mxGeometry y="88" width="220" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="DemoArrayListyLinkedList" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="920" width="220" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="- menu()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="39">
+                    <mxGeometry y="26" width="220" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="39">
+                    <mxGeometry y="60" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="ArrayListyLinkedList" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="930" width="220" height="176" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="43">
+                    <mxGeometry y="26" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="+ size(): int&lt;br&gt;+ add(Object): void&lt;br&gt;+ add(int, Object): void&lt;br&gt;+ clear(): void&lt;br&gt;+ get(int): Object&lt;br&gt;+ indexOf(Object): int&lt;br&gt;+ remove(int): void&lt;br&gt;+ set(int, Object): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="43">
+                    <mxGeometry y="54" width="220" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="List" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="15" y="880" width="220" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="- size: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+                    <mxGeometry y="26" width="220" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="50">
+                    <mxGeometry y="50" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="+ List()&lt;br&gt;+ isEmpty(): boolean&lt;br&gt;+ add(Object): void&lt;br&gt;+ clear(): void&lt;br&gt;+ remove(Object): void&lt;br&gt;+ contains(Object): boolean&lt;br&gt;+ size(): int&lt;br&gt;+ get(int): Object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+                    <mxGeometry y="78" width="220" height="122" as="geometry"/>
+                </mxCell>
+                <object label="ListaDeContactos" id="55">
+                    <mxCell style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;points=[[0,0,0,0,0],[0,0.25,0,0,0],[0,0.5,0,0,0],[0,0.75,0,0,0],[0,1,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[1,0,0,0,0],[1,0.25,0,0,0],[1,0.5,0,0,0],[1,0.75,0,0,0],[1,1,0,0,0]];" vertex="1" parent="1">
+                        <mxGeometry x="290" y="20" width="490" height="190" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="56" value="- contactos:Lista&amp;lt;Contacto&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="55">
+                    <mxGeometry y="26" width="490" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="55">
+                    <mxGeometry y="50" width="490" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="+ ListaDeContactos()&lt;br&gt;+ mostrarTodosLosContactos(): Lista&amp;lt;Contacto&amp;gt;&lt;br&gt;+ agregarContacto(String nombre, String apellido, String direccion, String telefono, String correo, String celular): boolean&lt;br&gt;+ buscarContacto(String nombre, String apellido): Contacto&lt;br&gt;+ eliminarContacto(String nombre, String apellido): boolean&lt;br&gt;+ modificarContacto(String nombre, String apellido, String direccion, String telefono, String correo, String celular): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="55">
+                    <mxGeometry y="58" width="490" height="132" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

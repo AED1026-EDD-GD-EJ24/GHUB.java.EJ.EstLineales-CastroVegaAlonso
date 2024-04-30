@@ -1,6 +1,9 @@
 ./cuadrupedo/Cuadrupedo.java
 ./personas/Persona.java
 ./miTest/AppTest.java
+./listaDoble/ListaDobleCircular.java
+./listaDoble/Nodo.java
+./listaDoble/ListaDoblementeEnlazada.java
 ./miPrincipal/Pila.java
 ./miPrincipal/DemoListaDeContactos.java
 ./miPrincipal/Delimitadores.java
@@ -27,9 +30,8 @@
 ./miPrincipal/Cola.java
 ./miPrincipal/DemoCola.java
 ./miPrincipal/DemoTablaDispersion.java
-./miPrincipal/listaDoble/ListaDobleCircular.java
-./miPrincipal/listaDoble/Nodo.java
-./miPrincipal/listaDoble/ListaDoblementeEnlazada.java
 ./miPrincipal/DemoEstCombinada.java
 ./miPrincipal/UNombre.java
+./miPrincipal/ArrayListExamen.java
+./miPrincipal/ColaTest.java
 ./miPrincipal/Hashtable2.java
